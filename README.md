@@ -3,21 +3,21 @@
 ## Logging in Django Applications
 
 Create a simple django application and run it
-'''
+```
 $ django-admin startproject LoggingDemoApp
 $ cd LoggingDemoApp
 $ python manage.py runserver
-'''
+```
 Now you can see the admin page when you hit http://localhost:8000 url
 
 Now add module app
-'''
+```
 $ python manage.py startapp welcome
-'''
+```
 
 Lets add the support of Logging
 Add the below code snippets in the /welcome/views.py file
-'''
+```
 # Creation of logger
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -38,17 +38,17 @@ consoleHandler.setFormatter(formatter)
 # Add both Console and File handers to logger
 logger.addHandler(logHandler)
 logger.addHandler(consoleHandler)
-'''
+```
 
 Now log the error, info, debug into the console or file by using the below code
-'''
+```
 logger.error("Test Logging !!")
 logger.debug("Debug Log !!")
 logger.info("Info Log !!")
-'''
+```
 
 Now you can check the LoggingDemoApp directory for log files.
-'''
+```
 debug.log
 debug.log.2020-07-10_19-12
-'''
+```
