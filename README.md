@@ -1,6 +1,6 @@
-# DJango-Applications
+# Django-Applications
 
-## Logging in Django Applications
+## -> Logging in Django Applications
 
 Create a simple django application and run it
 ```
@@ -10,7 +10,7 @@ $ python manage.py runserver
 ```
 Now you can see the admin page when you hit http://localhost:8000 url
 
-Now add module app
+Now create a module app inside LoggingDemoApp
 ```
 $ python manage.py startapp welcome
 ```
