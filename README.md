@@ -61,12 +61,12 @@ Simple File handler - this creates the file and appends the log
 ```
 fileHandler = logging.FileHandler('debug.log')
 ```
-Create new log file when it reaches size of 1MB
+Roll the log file when it reaches size of 1MB
 ```
 logHandler = handlers.RotatingFileHandler('debug.log', maxBytes=1024, backupCount=0)
 ```
-Creates new log file every day
+Roll log file every day, other values  ( S,M,H,D,W0,W1,midnight)
 ```
-logHandler = handlers.TimedRotatingFileHandler('debug.log', when='M', interval=1)
+logHandler = handlers.TimedRotatingFileHandler('debug.log', when='midnight', interval=1)
 logHandler.suffix = "%Y-%m-%d_%H-%M-%S"
 ```
