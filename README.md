@@ -2,7 +2,7 @@
 - [Logging in Django Application](#Logging-in-Django-Applications)
 - [ReCaptcha Implementation in Django Application](#ReCaptcha-Implementation-in-Django-Application)
 
-## -> Logging in Django Applications
+# Logging in Django Applications
 
 Create a simple django application and run it
 ```
