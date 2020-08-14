@@ -1,6 +1,6 @@
 # Django-Applications
 - [Logging in Django Application ](##Logging-in-Django-Applications)
-- [Logging in Django Application ](##ReCaptcha-Implementation-in-Django-Application)
+- [Logging in Django Application ](#ReCaptcha-Implementation-in-Django-Application)
 
 ## -> Logging in Django Applications
 
@@ -73,7 +73,7 @@ logHandler = handlers.TimedRotatingFileHandler('debug.log', when='midnight', int
 logHandler.suffix = "%Y-%m-%d_%H-%M-%S"
 ```
 
-## -> ReCaptcha Implementation in Django Application
+# ReCaptcha Implementation in Django Application
 
 Create a simple django application and run it
 ```
