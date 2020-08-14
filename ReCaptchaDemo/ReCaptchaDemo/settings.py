@@ -74,7 +74,6 @@ WSGI_APPLICATION = 'ReCaptchaDemo.wsgi.application'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
-    #print('static file dir====', os.path.join(BASE_DIR, 'static'))
 )
 
 # Database
