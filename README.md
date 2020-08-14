@@ -70,3 +70,61 @@ Roll log file every day, other values  ( S,M,H,D,W0,W1,midnight)
 logHandler = handlers.TimedRotatingFileHandler('debug.log', when='midnight', interval=1)
 logHandler.suffix = "%Y-%m-%d_%H-%M-%S"
 ```
+
+## -> ReCaptcha Implementation in Django Application
+
+Create a simple django application and run it
+```
+$ django-admin startproject ReCaptchaDemo
+$ cd ReCaptchaDemo
+$ python manage.py startapp Login
+$ python manage.py runserver
+```
+
+Create form (index.html) using bootstrap 4
+```
+$ cd ReCaptchaDemo
+create new directory "templates"
+create a file index.html inside templates (add the html content)
+
+#css
+$ cd ReCaptchaDemo
+create a new directory "static"
+create a new directory "css" inside "static"
+Copy the required css files inside "css" directory
+
+#updates in ReCaptchaDemo/settings.py file
+- update the DIRS and rest of the TEMPLATES are same
+TEMPLATES = [
+    {
+        ...
+        'DIRS':
+            [
+                os.path.join(BASE_DIR, 'templates')
+            ],
+        ...
+    },
+]
+
+- add the following
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+- create new variable GOOGLE_RECAPTCHA_SECRET_KEY
+GOOGLE_RECAPTCHA_SECRET_KEY = 'YOUR_PRIVATE_KEY'
+```
+
+Register for ReCaptcha and get SITE_KEY & SECRET_KEY
+- Click this link to register website https://www.google.com/recaptcha/admin/create
+- Enter the label "Demo Site 1"
+- Select "reCAPTCHA v2" -- "I'm not a robot" tickbox
+- Add "localhost" in domains
+- Accept the reCAPTCHA Terms of Service
+- Then submit to get SITE_KEY & SECRET_KEY
+
+Update the keys in Django application
+- Update SITE_KEY in index.html file.
+- Update SECRET_KEY in ReCaptchaDemo/settings.py
+
+Don't forget to do the changes in views.py & urls.py file.
