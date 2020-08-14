@@ -1,4 +1,6 @@
 # Django-Applications
+- [Logging in Django Application ](##Logging-in-Django-Applications)
+- [Logging in Django Application ](##ReCaptcha-Implementation-in-Django-Application)
 
 ## -> Logging in Django Applications
 
