@@ -128,3 +128,4 @@ Update the keys in Django application
 - Update SECRET_KEY in ReCaptchaDemo/settings.py
 
 Don't forget to do the changes in views.py & urls.py file.
+<img src="/ReCaptchaDemo/django_recaptcha.png"/>
