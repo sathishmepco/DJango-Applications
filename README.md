@@ -135,3 +135,19 @@ Don't forget to do the changes in views.py & urls.py file.
 
 
 # Django Simple Captcha
+
+Simple Captcha documentation https://django-simple-captcha.readthedocs.io/en/latest/usage.html
+
+```
+1. Installation
+pip install  django-simple-captcha
+
+2. Add captcha to the INSTALLED_APPS in your settings.py
+
+3. Run python manage.py migrate
+
+4. Add an entry to your urls.py:
+urlpatterns += [
+    url(r'^captcha/', include('captcha.urls')),
+]
+```
