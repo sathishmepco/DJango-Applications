@@ -16,7 +16,7 @@
   <body class="text-center">
 	<form class="form-signin" action="/login" method="POST">
 	
-	<img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+	<img class="mb-4" src="/static/img/bootstrap-solid.svg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">User Login</h1>
 	<!-- to show error message -->
 	{% csrf_token %}
@@ -33,14 +33,10 @@
 	{% for field in form %}
         {{ field }}
     {% endfor %}
-	
-	
-    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
-	
+		
     <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign In" style="margin:10px 0px 0px 0px">
 	  
     <p class="mt-5 mb-3 text-muted">&copy; 2020 sathishmepco@gmail.com All Rights Reserved</p>
     </form>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
   </body>
 </html>
