@@ -1,6 +1,7 @@
 # Django-Applications
 - [Logging in Django Application](#Logging-in-Django-Applications)
 - [ReCaptcha Implementation in Django Application](#ReCaptcha-Implementation-in-Django-Application)
+- [Django Simple Captcha](#Django-Simple-Captcha)
 
 # Logging in Django Applications
 
@@ -131,3 +132,6 @@ Update the keys in Django application
 
 Don't forget to do the changes in views.py & urls.py file.
 <img src="/ReCaptchaDemo/django_recaptcha.png"/>
+
+
+# Django Simple Captcha
